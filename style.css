@@ -59,11 +59,14 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
     cursor: default;
+    transform: scale(1.25);
 }
 
 /* HAMBURGER MENU */
@@ -174,7 +177,13 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    transition: transform 0.5s ease;
     /* border-radius: 50%; */
+}
+
+.section__pic-container-profile:hover {
+    transform: scale(1.1);
+  
 }
 
 
@@ -354,6 +363,7 @@ section {
 
 #experience {
     position: relative;
+    margin: 10px;
 }
 
 .experience-sub-title {
