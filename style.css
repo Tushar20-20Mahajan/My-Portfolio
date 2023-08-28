@@ -61,7 +61,7 @@ a:hover {
 .logo {
     font-size: 3rem;
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .logo:hover {
@@ -257,16 +257,23 @@ section {
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.2rem);
+
 }
 
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
+    transition: all 0.5s ease-in-out;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
     cursor: pointer;
+    
 }
 
 .btn-color-1,
@@ -341,6 +348,12 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.details-container:hover{
+    transform: scale(1.2rem);
+
 }
 
 .section-container {
