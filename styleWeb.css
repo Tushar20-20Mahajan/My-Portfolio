@@ -81,22 +81,23 @@ button {
 
 .section__pic-container-profile {
     flex: 0 0 40%;
-    max-width: 40%;
+    width: 40%;
+    height: 40vh;
     position: relative;
     transition: transform 0.5s ease;
 }
 
 .section__pic-container-profile:hover {
     transform: scale(1.1);
-  
 }
-
 
 .section__pic-container-profile img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; /* Set the width to 100% */
+    height: 100%; /* Set the height to 100% */
+    object-fit: cover;
+    overflow: hidden;
 }
+
 
 .section__text {
     flex: 1;
