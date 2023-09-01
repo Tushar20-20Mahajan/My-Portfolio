@@ -147,11 +147,9 @@
   section {
     margin: 0 3%;
   }
-  /* .section__pic-container {
-    width: 100%;
-    height: auto;
-    margin: 0 auto 2rem;
-  } */
+ .contactContainer{
+  margin-top: 1rem;
+ }
   .contactRow {
     flex-direction: column;
     align-items: center;
