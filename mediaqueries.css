@@ -150,6 +150,9 @@
     justify-content: center;
 
   }
+  .section__pic-container-profile:hover{
+    transform: scale(0.9);
+  }
   #projects{
     margin-top: 2rem;
   }
