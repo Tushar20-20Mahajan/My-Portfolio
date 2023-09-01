@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Add this to include padding and border in element dimensions */
 }
 
 body {
@@ -25,7 +26,6 @@ p {
     text-align: center;
     margin-top: 30px;
     object-fit: cover;
-
 }
 
 .logo:hover {
@@ -33,7 +33,6 @@ p {
     transform: scale(1.25);
     object-fit: cover;
     margin-top: 30px;
-
 }
 
 /* TRANSITION */
@@ -49,7 +48,6 @@ a {
     margin-left: 5rem;
     background-color: white;
     transition: transform 0.5s ease;
-
 }
 
 .icon:hover {
@@ -66,53 +64,59 @@ button {
     margin-left: 30px;
 }
 
-/* Project Section Started*/
+/* Project Section Started */
 
+/* Add this media query for smaller screens */
+@media (max-width: 768px) {
+    .section__pic-container-profile {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
 
-/* Add this CSS to adjust the layout and alignment of the #project section */
-#project1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    height: 80vh;
-    flex: 1;
-    flex-wrap: wrap;
-    /* margin: 0rem 50px; */
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 0rem;
-    margin-bottom: 5rem;
+    #project1,
+    #project2 {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
+/* Center the image in the section__pic-container-profile */
+/* Center the image in the section__pic-container-profile */
 .section__pic-container-profile {
-    flex: 0 0 40%;
-    width: 40%;
-    height: 40vh;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
     transition: transform 0.5s ease;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
+/* Adjust the image size to fit the container */
+.section__pic-container-profile img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* This will maintain the image's aspect ratio */
+}
+
+/* Add this media query for smaller screens */
+@media (max-width: 768px) {
+    .section__pic-container-profile {
+        height: auto;
+    }
+}
+
 
 .section__pic-container-profile:hover {
     transform: scale(1.1);
 }
 
-.section__pic-container-profile img {
-    width: 100%;
-    /* Set the width to 100% */
-    height: 100%;
-    /* Set the height to 100% */
-    object-fit: cover;
-    overflow: hidden;
-}
 
 
 .section__text {
-    flex: 1;
-    max-width: 40%;
-}
-
-.section__text {
+    max-width: 100%;
     align-self: center;
     text-align: center;
 }
@@ -136,6 +140,7 @@ button {
 }
 
 .section__text__p4 {
+    text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -171,7 +176,6 @@ button {
 
 .btn:hover {
     transform: scale(1.2rem);
-
 }
 
 .btn-color-1,
@@ -183,7 +187,6 @@ button {
 .btn-color-1:hover,
 .btn-color-2:hover {
     cursor: pointer;
-
 }
 
 .btn-color-1,
@@ -204,200 +207,10 @@ button {
     border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-.btn-container {
-    gap: 1rem;
-}
-
-
-#project2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    height: 80vh;
-    flex: 1;
-    flex-wrap: wrap;
-    margin: 5rem 50px;
-}
-
-
-
-/* Responsive -> MediaQuery*/
-/* For screens up to 1400px wide */
-@media screen and (max-width: 1400px) {
-
-    /* Add styles for this screen width here */
-    #project1 {
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
-
-    .section__pic-container-profile {
-        transform: scale(1);
-    }
-
-    .btn-containerBack {
-        margin-top: 1rem;
-    }
-}
-
-/* For screens up to 1200px wide */
-@media screen and (max-width: 1200px) {
-
-    /* Add styles for this screen width here */
-    #desktop-nav {
-        display: none;
-    }
-
-    #hamburger-nav {
-        display: flex;
-    }
-
-    .experience-details-container {
-        margin-top: 2rem;
-    }
-
-    #project1,
-    .section-container {
-        display: block;
-    }
-
-    #project1 .title {
-        font-size: 2rem;
-    }
-
-    #project1 .section__text__p3 {
-        font-size: 1rem;
-    }
-
-    .btn-containerBack {
-        margin-top: 1rem;
-    }
-}
-
-/* For screens up to 860px wide */
-@media screen and (max-width: 860px) {
-
-    /* Add styles for this screen width here */
-    .contactRow {
-        flex-direction: column;
-    }
-}
-
+/* Add this media query for smaller screens */
 @media (max-width: 768px) {
-
-    /* Adjust for smaller screens */
-    .section__pic-container-profile,
-    .section__text {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
-/* For screens up to 600px wide */
-@media screen and (max-width: 600px) {
-
-    /* Add styles for this screen width here */
     #project1,
-    #project2,
-    #project3,
-    #project4,
-    #project5,
-    #project6 {
-        margin-top: 2rem;
-        height: auto;
-    }
-
-    #project1 .title,
-    #project2 .title,
-    #project3 .title,
-    #project4 .title,
-    #project5 .title,
-    #project6 .title {
-        font-size: 2rem;
-    }
-
-    #project1 .section__pic-container-profile img,
-    #project2 .section__pic-container-profile img,
-    #project3 .section__pic-container-profile img,
-    #project4 .section__pic-container-profile img,
-    #project5 .section__pic-container-profile img,
-    #project6 .section__pic-container-profile img {
-        width: auto;
-        height: 46vw;
-    }
-
-    .btn-containerBack {
-        margin-top: 2rem;
-    }
-
-    .section__text__p2 {
-        font-size: 1.25rem;
-    }
-
-    .section__text__p3 {
-        font-size: 1rem;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-}
-
-/* For screens up to 480px wide */
-@media screen and (max-width: 480px) {
-
-    /* Add styles for this screen width here */
-    body {
-        overflow-x: hidden;
-    }
-
-    #project1 .section__pic-container-profile img,
-    #project2 .section__pic-container-profile img,
-    #project3 .section__pic-container-profile img,
-    #project4 .section__pic-container-profile img,
-    #project5 .section__pic-container-profile img,
-    #project6 .section__pic-container-profile img {
-        display: flex;
-        height: 300px;
-        width: 300px;
-        margin-left: 50px;
-        justify-content: center;
-    }
-
-    #project1 .section__pic-container-profile:hover,
-    #project2 .section__pic-container-profile:hover,
-    #project3 .section__pic-container-profile:hover,
-    #project4 .section__pic-container-profile:hover,
-    #project5 .section__pic-container-profile:hover,
-    #project6 .section__pic-container-profile:hover {
-        transform: scale(0.9);
-    }
-
-    #project1,
-    #project2,
-    #project3,
-    #project4,
-    #project5,
-    #project6 {
-        margin-top: 2rem;
-    }
-
-    #project1 .section__pic-container-profile img,
-    #project2 .section__pic-container-profile img,
-    #project3 .section__pic-container-profile img,
-    #project4 .section__pic-container-profile img,
-    #project5 .section__pic-container-profile img,
-    #project6 .section__pic-container-profile img {
-        width: auto;
-        height: 300px;
-    }
-
-    .contactContainer {
-        margin-top: 1rem;
-    }
-
-    .experience-sub-title {
-        font-size: 1.2rem;
+    #project2 {
+        margin: 2rem 20px;
     }
 }
