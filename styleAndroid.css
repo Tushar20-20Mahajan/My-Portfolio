@@ -143,7 +143,20 @@ button {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    margin-top: 2rem;
+    margin-top: 6rem;
+}
+
+.section__text__p5 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.section__text__p6 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
 }
 
 .title {
