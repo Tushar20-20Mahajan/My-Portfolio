@@ -1,16 +1,20 @@
+/* index.html */
 /* For screens up to 1400px wide */
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
   }
+
   .about-containers {
     flex-wrap: wrap;
   }
+
   #contact,
   #projects {
     height: fit-content;
   }
+
   /* Add this rule to stack contact-right below contact-left */
   .contactRow {
     flex-direction: column;
@@ -22,35 +26,44 @@
   #desktop-nav {
     display: none;
   }
+
   #hamburger-nav {
     display: flex;
   }
+
   #experience,
   .experience-details-container {
     margin-top: 2rem;
   }
+
   #profile,
   .section-container {
     display: block;
   }
+
   .arrow {
     display: none;
   }
+
   section,
   .section-container {
     height: fit-content;
   }
+
   section {
     margin: 0 5%;
   }
+
   .section__pic-container {
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
   }
+
   .about-containers {
     margin-top: 0;
   }
+
   /* Add this rule to stack contact-right below contact-left */
   .contactRow {
     flex-direction: row;
@@ -66,65 +79,82 @@
 
 /* For screens up to 600px wide */
 @media screen and (max-width: 600px) {
+
   #contact,
   footer {
     height: auto;
     margin-bottom: 2rem;
   }
+
   #profile {
     height: auto;
     margin-bottom: 0;
   }
-  #projects{
+
+  #projects {
     margin-top: 2rem;
   }
-  #contact{
+
+  #contact {
     margin-top: 2rem;
   }
+
   article {
     font-size: 1rem;
   }
+
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
   }
+
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
+
   .contact-info-container {
     margin: 0;
   }
+
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
+
   .experience-sub-title {
     font-size: 1.25rem;
   }
+
   .logo {
     font-size: 1.5rem;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
+
   .section__pic-container {
     width: auto;
     height: 46vw;
     justify-content: center;
   }
+
   .section__text__p2 {
     font-size: 1.25rem;
   }
+
   .title {
     font-size: 2rem;
   }
+
   .text-container {
     text-align: justify;
   }
+
   /* Add this rule to stack contact-right below contact-left */
   .contactRow {
     flex-direction: column;
@@ -134,15 +164,18 @@
 
 /* For screens up to 480px wide (Redmi Note 5 Pro) */
 @media screen and (max-width: 480px) {
+
   /* Adjust styles for small screens */
   body {
     overflow-x: hidden;
   }
+
   #profile {
     height: auto;
     margin-bottom: 0;
   }
-  .section__pic-container-profile{
+
+  .section__pic-container-profile {
     display: flex;
     height: 300px;
     width: 300px;
@@ -150,30 +183,39 @@
     justify-content: center;
 
   }
-  .section__pic-container-profile:hover{
+
+  .section__pic-container-profile:hover {
     transform: scale(0.9);
   }
-  #projects{
+
+  #projects {
     margin-top: 2rem;
   }
-  #contact{
+
+  #contact {
     margin-top: 2rem;
   }
+
   section {
     margin: 0 3%;
   }
- .contactContainer{
-  margin-top: 1rem;
- }
+
+  .contactContainer {
+    margin-top: 1rem;
+  }
+
   .contactRow {
     flex-direction: column;
     align-items: center;
   }
+
   .contact-right,
   .contact-left {
     flex-basis: 100%;
   }
+
   .experience-sub-title {
     font-size: 1.2rem;
   }
 }
+
