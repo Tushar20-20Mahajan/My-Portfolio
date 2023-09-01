@@ -54,8 +54,8 @@
             <h1 class="title">Tushar Mahajan</h1>
             <p class="section__text__p2">Android Devloper(Kotlin) || Full-Stack Devloper</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
-                    Download CV
+                <button class="btn btn-color-2" onclick="window.open('./assets/profile.pdf')">
+                    View CV
                 </button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info
@@ -66,6 +66,8 @@
                     onclick="location.href='https://www.linkedin.com/in/tushar-mahajan-110451225/'">
                 <img src="assets/github.png" alt="My GitHub Profile" class="icon"
                     onclick="location.href='https://github.com/Tushar20-20Mahajan'">
+                <img src="assets/linkImage.png" alt="My GFG Profile" class="icon"
+                    onclick="location.href='https://auth.geeksforgeeks.org/user/tusharmahajan080/practice'">
                 <img src="assets/Instagram.png" alt="My Instagram Profile" class="icon"
                     onclick="location.href='https://www.instagram.com/_tushar_mahajan_/'">
                 <img src="assets/You-Tube.png" alt="My Instagram Profile" class="icon4"
@@ -73,7 +75,7 @@
             </div>
         </div>
     </div>
-    <br><br><br>
+
     <div id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -156,7 +158,7 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
     </div>
-    <br><br><br>
+
     <div id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Experience & Skills</h1>
@@ -273,7 +275,7 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </div>
-    <br><br><br>
+
     <div id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -311,48 +313,58 @@
 
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </div>
-    <br><br><br>
-    <div id="contact">
-        <!-- <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                <p><p><a href="mailto: tusharmahajan080@gmail.com">tusharmahajan080@gmail.com</a></p>
-                ></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"  />
-                <p><a href="www.linkedin.com/in/tushar-mahajan-110451225">LinkedIn</a></p>
-            </div>
-        </div> -->
 
+    <div id="contact">
+        <h1 class="title">Contact Me</h1>
         <div class="contactContainer">
             <div class="contactRow">
-
                 <div class="contact-left">
-                    <h1 class="title">Contact Me</h1>
+                    <h1 class="section__text__p2"><u>Contact Details</u></h1>
                     <div class="contact-info-container">
                         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                        <p>
                         <p><a href="mailto: tusharmahajan080@gmail.com">tusharmahajan080@gmail.com</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                        <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon email-icon" />
+                        <p><a href="tel:+91 7006499240">Call us at +91 7006499240</a>
                         </p>
                     </div>
                     <div class="contact-info-container">
-                        <img src="./assets/phone.png" alt="Email icon" class="icon contact-icon email-icon" />
-                        <p>
-                            <p><a href="tel:+91 7006499240">+91 7006499240</a>
-                        </p>
+                        <img src="./assets/linkImage.png" alt="Link icon" class="icon contact-icon email-icon" />
+                        <p><a href="https://auth.geeksforgeeks.org/user/tusharmahajan080/practice">Geeks For Geeks(GFG)
+                                - Tushar Mahajan </a>
                         </p>
                     </div>
-
+                    <div id="socials-container">
+                        <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+                            onclick="location.href='https://www.linkedin.com/in/tushar-mahajan-110451225/'">
+                        <img src="assets/github.png" alt="My GitHub Profile" class="icon"
+                            onclick="location.href='https://github.com/Tushar20-20Mahajan'">
+                        <img src="assets/Instagram.png" alt="My Instagram Profile" class="icon"
+                            onclick="location.href='https://www.instagram.com/_tushar_mahajan_/'">
+                        <img src="assets/You-Tube.png" alt="My Instagram Profile" class="icon4"
+                            onclick="location.href='https://www.youtube.com/channel/UCCKlzjC09UeUeCABtaszHbg'">
+                    </div>
+                    <div id="download-cv">
+                        <a class="btn btn-color-1" href="./assets/Resume.pdf" download>Download my Resume</a>
+                    </div>
                 </div>
 
-                <div class="contact-right"></div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Phone-Number" placeholder="Your Phone Number" required
+                            pattern="[0-9]{10}" title="Please enter a 10-digit phone number (numbers only)">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>
-    <br><br><br>
+
     <footer>
         <nav>
             <div class="nav-links-container">

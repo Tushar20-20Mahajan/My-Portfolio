@@ -305,6 +305,7 @@ section {
     position: relative;
     text-align: center;
     margin: 10px;
+    margin-top: 4rem;
 }
 
 .about-containers {
@@ -338,7 +339,7 @@ section {
 .arrow {
     position: absolute;
     right: 3rem;
-    bottom: -1rem;
+    bottom: -3rem;
 }
 
 
@@ -385,6 +386,7 @@ section {
 #experience {
     position: relative;
     margin: 30px;
+    margin-top: 20rem;
 }
 
 .experience-sub-title {
@@ -455,6 +457,7 @@ article .icon {
 #projects {
     position: relative;
     margin: 30px;
+    margin-top: 20rem;
 }
 
 .color-container {
@@ -506,13 +509,58 @@ article .icon {
 }
 
 /* CONTACT */
-
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 20rem;
 }
+.contactRow {
+    display: flex;
+    justify-content: space-between; /* Spread the contact-left and contact-right */
+}
+
+.contact-left {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Adjust padding as needed */
+    flex-basis: 35%;
+    
+}
+.contact-left h1{
+    text-align: center;
+}
+
+#download-cv{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#download-cv a{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 11.5rem;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+#download-cv a:hover{
+    transform: scale(1.2rem);
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+
+.contact-right {
+    flex: 1; /* Take up available space */
+    padding: 20px; /* Adjust padding as needed */
+    flex-basis: 60%;
+}
+
+
+
 
 .contact-info-upper-container {
     display: flex;
@@ -528,8 +576,7 @@ article .icon {
 .contact-info-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 1rem;
 }
 
@@ -550,6 +597,7 @@ article .icon {
 footer {
     height: 26vh;
     margin: 0 1rem;
+    margin-top: 4rem;
 }
 
 footer p {
