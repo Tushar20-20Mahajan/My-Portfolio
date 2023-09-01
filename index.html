@@ -314,12 +314,13 @@
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </div>
 
-    <div id="contact">
+    <div id="contact" class="contact">
         <h1 class="title">Contact Me</h1>
         <div class="contactContainer">
-            <div class="contactRow">
-                <div class="contact-left">
-                    <h1 class="section__text__p2"><u>Contact Details</u></h1>
+          <div class="contactRow">
+            <div class="contact-left">
+              <!-- Contact left content -->
+              <h1 class="section__text__p2"><u>Contact Details</u></h1>
                     <div class="contact-info-container">
                         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
                         <p><a href="mailto: tusharmahajan080@gmail.com">tusharmahajan080@gmail.com</a></p>
@@ -348,25 +349,25 @@
                     <div id="download-cv">
                         <a class="btn btn-color-1" href="./assets/Resume.pdf" download>Download my Resume</a>
                     </div>
-                </div>
-
-                <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="Phone-Number" placeholder="Your Phone Number" required
-                            pattern="[0-9]{10}" title="Please enter a 10-digit phone number (numbers only)">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <div class="submitButton">
-                            <button type="submit" class="btn btn-color-1">Submit</button>
-                        </div>
-                        
-                    </form>
-
-                </div>
             </div>
+            <div class="contact-right">
+              <!-- Contact right content -->
+              <form action="">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Phone-Number" placeholder="Your Phone Number" required
+                    pattern="[0-9]{10}" title="Please enter a 10-digit phone number (numbers only)">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <div class="submitButton">
+                    <button type="submit" class="btn btn-color-1">Submit</button>
+                </div>
+               
+            </form>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      
 
     <footer>
         <nav>
