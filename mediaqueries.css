@@ -138,8 +138,8 @@
   }
   .section__pic-container-profile{
     display: flex;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     justify-content: center;
 
   }
