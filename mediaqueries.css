@@ -137,8 +137,10 @@
     margin-bottom: 0;
   }
   .section__pic-container-profile{
+    display: flex;
     height: 200px;
     width: 200px;
+    justify-content: center;
 
   }
   section {
