@@ -56,11 +56,12 @@
     flex-direction: row;
   }
 }
+
+/* For screens up to 860px wide */
 @media screen and (max-width: 860px) {
   .contactRow {
     flex-direction: column;
   }
-
 }
 
 /* For screens up to 600px wide */
@@ -121,5 +122,36 @@
   /* Add this rule to stack contact-right below contact-left */
   .contactRow {
     flex-direction: column;
+  }
+}
+
+/* For screens up to 480px wide  */
+@media screen and (max-width: 480px) {
+  /* Adjust styles for small screens */
+  body {
+    overflow-x: hidden;
+  }
+  #profile {
+    height: auto;
+    margin-bottom: 0;
+  }
+  section {
+    margin: 0 3%;
+  }
+  .section__pic-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2rem;
+  }
+  .contactRow {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-right,
+  .contact-left {
+    flex-basis: 100%;
+  }
+  .experience-sub-title {
+    font-size: 1.2rem;
   }
 }
