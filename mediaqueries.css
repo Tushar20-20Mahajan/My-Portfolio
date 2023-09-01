@@ -126,8 +126,7 @@
 }
 
 
-
-/* For screens up to 480px wide  */
+/* For screens up to 480px wide (Redmi Note 5 Pro) */
 @media screen and (max-width: 480px) {
   /* Adjust styles for small screens */
   body {
@@ -142,7 +141,7 @@
   }
   .section__pic-container {
     width: 100%;
-    max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+    max-width: 600px; /* Set max-width to 600px for both sections */
     height: auto;
     margin: 0 auto 2rem;
   }
