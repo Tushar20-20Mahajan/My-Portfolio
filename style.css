@@ -522,6 +522,8 @@ article .icon {
     flex-direction: column;
     height: 70vh;
     margin-top: 20rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .contactContainer {
@@ -531,6 +533,7 @@ article .icon {
 .contactRow {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .contact-left {
@@ -584,11 +587,27 @@ article .icon {
 
 form input, form textarea{
     width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    color: white;
+    padding: 15px;
+    margin: 15px 3px;
+    font-size: 18px;
+    border-radius: 6px
 
 }
+form input::placeholder, form textarea::placeholder{
+    font-family: "Poppins", sans-serif;
+    background: #262626;
+} 
 
 
 /* Submit Button */
+.submitButton{
+    display: flex;
+    justify-content: center;
+}
 
 .submitButton button {
     font-weight: 600;
@@ -645,7 +664,7 @@ form input, form textarea{
 footer {
     height: 26vh;
     margin: 0 1rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 footer p {
