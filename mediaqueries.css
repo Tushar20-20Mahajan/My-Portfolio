@@ -75,6 +75,12 @@
     height: auto;
     margin-bottom: 0;
   }
+  #projects{
+    margin-top: 2rem;
+  }
+  #contact{
+    margin-top: 2rem;
+  }
   article {
     font-size: 1rem;
   }
@@ -143,6 +149,12 @@
     margin-left: 50px;
     justify-content: center;
 
+  }
+  #projects{
+    margin-top: 2rem;
+  }
+  #contact{
+    margin-top: 2rem;
   }
   section {
     margin: 0 3%;
