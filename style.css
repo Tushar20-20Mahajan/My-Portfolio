@@ -607,6 +607,7 @@ form input::placeholder, form textarea::placeholder{
 .submitButton{
     display: flex;
     justify-content: center;
+    
 }
 
 .submitButton button {
@@ -655,4 +656,10 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+#msg{
+    color: rgb(53, 53, 53);
+    margin-top: -20px;
+    display: block;
 }
