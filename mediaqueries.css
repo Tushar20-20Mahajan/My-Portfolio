@@ -136,15 +136,19 @@
     height: auto;
     margin-bottom: 0;
   }
+  .section__pic-container-profile{
+    height: 200px;
+    width: 200px;
+
+  }
   section {
     margin: 0 3%;
   }
-  .section__pic-container {
+  /* .section__pic-container {
     width: 100%;
-    max-width: 600px; /* Set max-width to 600px for both sections */
     height: auto;
     margin: 0 auto 2rem;
-  }
+  } */
   .contactRow {
     flex-direction: column;
     align-items: center;
