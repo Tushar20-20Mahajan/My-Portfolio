@@ -197,6 +197,7 @@ button {
 .btn-color-2 {
     border: rgb(53, 53, 53) 0.1rem solid;
     transition: all 0.5s ease-in-out;
+    margin-bottom: 2rem;
 }
 
 .btn-color-1:hover,
