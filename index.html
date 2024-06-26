@@ -1,440 +1,739 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tushar Mahajan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-    <link rel="icon" type="assets/x-icon" href="/assets/favicon.ico">
-    <meta name="description" content="
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="assets/x-icon" href="/assets/favicon.ico" />
+    <meta
+      name="description"
+      content="
     Discover my portfolio crafted with HTML, CSS, and JS. Immerse yourself in a 
     dynamic showcase of my projects, thoughtfully designed and skillfully coded. 
-    Explore a fusion of creativity and technology that defines my journey as a developer.">
-    <meta name="keywords" content="HTML, CSS, JavaScript , Portfolio , Projects">
-    <meta name="author" content="Tushar Mahajan">
-</head>
+    Explore a fusion of creativity and technology that defines my journey as a developer."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript , Portfolio , Projects"
+    />
+    <meta name="author" content="Tushar Mahajan" />
+  </head>
 
-<body>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Tushar Mahajan</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Tushar Mahajan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Tushar Mahajan</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Tushar Mahajan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <div id="profile">
-        <div class="section__pic-container-profile">
-            <img src="./assets/profile-pic.jpg" alt="Tushar Mahajan profile picture" />
+      <div class="section__pic-container-profile">
+        <img
+          src="./assets/profile-pic.jpg"
+          alt="Tushar Mahajan profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tushar Mahajan</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <p class="section__text__p1">
+          iOS(SwiftUI + iOS Frameworks) || Android(Kotlin) || Web
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/TusharMahajan(Resume).pdf')"
+          >
+            View CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Tushar Mahajan</h1>
-            <p class="section__text__p2"> Software Developer</p>
-            <p class="section__text__p1"> iOS(SwiftUI + iOS Frameworks) || Android(Kotlin) || Web</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/TusharMahajan(Resume).pdf')">
-                    View CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/tushar-mahajan-110451225/'">
-                <img src="assets/github.png" alt="My GitHub Profile" class="icon"
-                    onclick="location.href='https://github.com/Tushar20-20Mahajan'">
-                <img src="assets/linkImage.png" alt="My GFG Profile" class="icon"
-                    onclick="location.href='https://auth.geeksforgeeks.org/user/tusharmahajan080/practice'">
-                <img src="assets/Instagram.png" alt="My Instagram Profile" class="icon"
-                    onclick="location.href='https://www.instagram.com/_tushar_mahajan_/'">
-                <img src="assets/You-Tube.png" alt="My Instagram Profile" class="icon4"
-                    onclick="location.href='https://www.youtube.com/channel/UCCKlzjC09UeUeCABtaszHbg'">
-            </div>
+        <div id="socials-container">
+          <img
+            src="assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tushar-mahajan-110451225/'"
+          />
+          <img
+            src="assets/github.png"
+            alt="My GitHub Profile"
+            class="icon"
+            onclick="location.href='https://github.com/Tushar20-20Mahajan'"
+          />
+          <img
+            src="assets/linkImage.png"
+            alt="My GFG Profile"
+            class="icon"
+            onclick="location.href='https://auth.geeksforgeeks.org/user/tusharmahajan080/practice'"
+          />
+          <img
+            src="assets/Instagram.png"
+            alt="My Instagram Profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/_tushar_mahajan_/'"
+          />
+          <img
+            src="assets/You-Tube.png"
+            alt="My Instagram Profile"
+            class="icon4"
+            onclick="location.href='https://www.youtube.com/channel/UCCKlzjC09UeUeCABtaszHbg'"
+          />
         </div>
+      </div>
     </div>
 
     <div id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <h3 class="about-passion">Passionate Cricketer, Professional Engineer - Balancing Sport and Science.</h3>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <!-- <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                        <h3><u>Experience</u></h3>
-                        <br>
-                        <p>Chitkara University,
-                            Student<br>
-                            September 2021 - Present (2 years+)<br>
-                            Rajpura, Punjab, India</p>
-                        <br>
-                        <h4>Frontend Development</h4>
-                        <p> 1+ year</p>
-                        <br>
-                        <h4>Android Development</h4>
-                        <p>1+ year</p>
-                        <br>
-                        <h4>Java Development</h4>
-                        <p>1+ year</p>
-                    </div> -->
-                    <div class="details-container">
-                        <div class="experience-header">
-                            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-                            <h2>Experience</h2>
-                        </div>
-                        <div class="experience-item">
-                            <h3>Infosys</h3>
-                            <p><strong>Position:</strong> iOS App Developer</p>
-                            <p><strong>Duration:</strong> May 2024 - June 2024</p>
-                            <p><strong>Location:</strong> Mysuru, Karnataka, India</p>
-                            <p><strong>Description:</strong> Successfully completed a one-month internship focused on iOS Development. Gained proficiency in SwiftUI, Swift, API integration using Postman, and Xcode. Actively engaged in Agile methodologies, contributing to team management and teamwork. Enhanced presentation skills and deepened understanding of Scrum practices. Developed strong problem-solving abilities, time management, and effective communication skills.</p>
-                            
-                        </div>
-                        <!-- <div class="experience-details">
-                            <h4>Frontend Development</h4>
-                            <p><strong>Experience:</strong> 1+ year</p>
-                        </div> -->
-                        <!-- <div class="experience-details">
-                            <h4>Android Development</h4>
-                            <p><strong>Experience:</strong> 1+ year</p>
-                        </div> -->
-                        <!-- <div class="experience-details">
-                            <h4>Java Development</h4>
-                            <p><strong>Experience:</strong> 1+ year</p>
-                        </div> -->
-                    </div>
-                    
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon" />
-                        <div class="education-container">
-                            <h2>Education</h2>
-
-                                    <h3>Chitkara University</h3>
-                                    <p><strong>Program:</strong> Bachelor of Engineering - BE, Computer Science</p>
-                                    <p><strong>Duration:</strong> 2021 - 2025</p>
-    
-
-                                    <h3>ALLEN CAREER INSTITUTE</h3>
-                                    <p><strong>Duration:</strong> April 2019 - September 2021</p>
-    
-
-                                    <h3>MDK Senior Secondary School, Pathankot</h3>
-                                    <p><strong>Duration:</strong> March 2019 - May 2021</p>
-    
-
-                                    <h3>Christ The King Convent School, Pathankot</h3>
-                                    <p><strong>Duration:</strong> March 2009 - March 2019</p>
-    
-
-                                    <h3>Kendriya Vidyalaya No. 1 (AFS) Pathankot</h3>
-                                    <p><strong>Duration:</strong> March 2008 - March 2009</p>
-    
-
-                        </div>
-                        
-                    </div>
-                </div>
-
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <h3 class="about-passion">
+        Passionate Cricketer, Professional Engineer - Balancing Sport and
+        Science.
+      </h3>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="text-container">
-            <p>
-                <img src="./assets/Summary-logo.png" alt="Summary icon" class="icon">
-            <h3><u>Summary</u></h3>
-            <p>
-                
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="experience-header">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h2>Experience</h2>
+              </div>
+              <div class="experience-item">
+                <h3>Infosys</h3>
+                <p><strong>Position:</strong> iOS App Developer</p>
+                <p><strong>Duration:</strong> May 2024 - June 2024</p>
+                <p><strong>Location:</strong> Mysuru, Karnataka, India</p>
+                <p>
+                  <strong>Description:</strong> Successfully completed a
+                  one-month internship focused on iOS Development. Gained
+                  proficiency in SwiftUI, Swift, API integration using Postman,
+                  and Xcode. Actively engaged in Agile methodologies,
+                  contributing to team management and teamwork. Enhanced
+                  presentation skills and deepened understanding of Scrum
+                  practices. Developed strong problem-solving abilities, time
+                  management, and effective communication skills.
+                </p>
+              </div>
+            </div>
 
-            Passionate about technology with a solid foundation in computer science, I am dedicated to excellence and continuous learning. I am eager to apply my skills in a dynamic professional environment and make meaningful contributions. Actively participating in the Cricket Sports Club and Chitkara Cricket Team, as well as engaging in basketball, football, and volleyball, I have developed strong teamwork and collaboration skills. Let’s connect and explore how we can collaborate for mutual growth and success!
-                <br><br>
-            </p>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <div class="education-container">
+                <h2>Education</h2>
+
+                <h3>Chitkara University</h3>
+                <p>
+                  <strong>Program:</strong> Bachelor of Engineering - BE,
+                  Computer Science
+                </p>
+                <p><strong>Duration:</strong> 2021 - 2025</p>
+
+                <h3>ALLEN CAREER INSTITUTE</h3>
+                <p><strong>Duration:</strong> April 2019 - September 2021</p>
+
+                <h3>MDK Senior Secondary School, Pathankot</h3>
+                <p><strong>Duration:</strong> March 2019 - May 2021</p>
+
+                <h3>Christ The King Convent School, Pathankot</h3>
+                <p><strong>Duration:</strong> March 2009 - March 2019</p>
+
+                <h3>Kendriya Vidyalaya No. 1 (AFS) Pathankot</h3>
+                <p><strong>Duration:</strong> March 2008 - March 2009</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+      </div>
+      <div class="text-container">
+        <p>
+          <img
+            src="./assets/Summary-logo.png"
+            alt="Summary icon"
+            class="icon"
+          />
+        </p>
+
+        <h3><u>Summary</u></h3>
+        <p>
+          Passionate about technology with a solid foundation in computer
+          science, I am dedicated to excellence and continuous learning. I am
+          eager to apply my skills in a dynamic professional environment and
+          make meaningful contributions. Actively participating in the Cricket
+          Sports Club and Chitkara Cricket Team, as well as engaging in
+          basketball, football, and volleyball, I have developed strong teamwork
+          and collaboration skills. Let’s connect and explore how we can
+          collaborate for mutual growth and success!
+          <br /><br />
+        </p>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </div>
 
     <div id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience & Skills</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title"><u>Coding/Devlopment<br>Languages</u></h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Kotlin</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C/C++</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML , CSS</h3>
-                                <p>Expierenced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Java-Script</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Tailwind CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>React Js</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Figma</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Linux , SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience & Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title"><u>Skills</u></h2>
+                <div class="article-container">
+                  <!-- Application Development -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />Application Development
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>iOS App Development (SwiftUI, UIKit)</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Android Development (Kotlin)</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
                     </div>
+                  </div>
+              
+                  <!-- Web Development -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />Web Development
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>HTML, CSS</h3>
+                          <p>Experienced</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Tailwind CSS</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>JavaScript</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>React JS</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+              
+                  <!-- Programming Languages -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />Programming Languages
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>Swift</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Kotlin</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Java</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>JavaScript</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+              
+                  <!-- Tools & Technologies -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />Tools & Technologies
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>Xcode, iOS Frameworks</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Android Studio</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>API Integration (Postman)</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Figma</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Linux, SQL</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+              
+                  <!-- Software Development Methodologies -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />Software Development Methodologies
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>Agile, Scrum</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Project Management</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+              
+                  <!-- CSE Fundamentals -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />CSE Fundamentals
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>Data Structures and Algorithms (Java)</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Computer Networks</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Database Management System (DBMS)</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Object-Oriented Programming (OOPS)</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+              
+                  <!-- Soft Skills -->
+                  <div class="skill-section">
+                    <h3 class="skill-heading">
+                      <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />Soft Skills
+                    </h3>
+                    <div class="skill-details">
+                      <article class="skill-article">
+                        <div>
+                          <h3>Stakeholder Engagement</h3>
+                          <p>Beginner</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Cultural Intelligence</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                      <article class="skill-article">
+                        <div>
+                          <h3>Effective Dialogue</h3>
+                          <p>Intermediate</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title"><u>Achivements & Certificates</u></h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Graphic Designing</h3>
-                                <a
-                                    href="https://coursera.org/share/7db90ab8c9ad670e8d2ad51666ed3892">Show
-                                    Credendial</a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Google Analytics for Beginners</h3>
-                                <a
-                                    href="https://analytics.google.com/analytics/academy/certificate/dPd_Be_9SV2MUk4HFnrWLA">Show
-                                    Credendial</a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Workshop on Enterprise Web Development Skills </h3>
-                                <a
-                                    href="https://certificate.givemycertificate.com/c/c2f1d829-7b8a-4ce5-95a6-467f50a90e2f">Show
-                                    Credendial</a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Infosys Internship </h3>
-                                <a
-                                    href= "InfosysInternshipCertificate.html">Show
-                                    Credendial</a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>C++</h3>
-                                <a
-                                    href="http://files.codingninjas.in/certificate234671461fb6d81de089467490dff6136206c04.pdf">Show
-                                    Credendial</a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Cyber Security</h3>
-                                <a
-                                    href="https://www.credly.com/badges/234657c6-49e5-4123-8474-15812bcc9d99?source=linked_in_profile">Show
-                                    Credential</a>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Python</h3>
-                                <a
-                                    href="http://files.codingninjas.in/certificate18394619238f212f3241ebc51b5d37ca9f885c2.pdf">Show
-                                    Credential</a>
+              </div>
+              
 
-                            </div>
-                        </article>
-                    </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              <u>Achivements & Certificates</u>
+            </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Graphic Designing</h3>
+                  <a
+                    href="https://coursera.org/share/7db90ab8c9ad670e8d2ad51666ed3892"
+                    >Show Credendial</a
+                  >
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Analytics for Beginners</h3>
+                  <a
+                    href="https://analytics.google.com/analytics/academy/certificate/dPd_Be_9SV2MUk4HFnrWLA"
+                    >Show Credendial</a
+                  >
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Workshop on Enterprise Web Development Skills</h3>
+                  <a
+                    href="https://certificate.givemycertificate.com/c/c2f1d829-7b8a-4ce5-95a6-467f50a90e2f"
+                    >Show Credendial</a
+                  >
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Infosys Internship</h3>
+                  <a href="InfosysInternshipCertificate.html"
+                    >Show Credendial</a
+                  >
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <a
+                    href="http://files.codingninjas.in/certificate234671461fb6d81de089467490dff6136206c04.pdf"
+                    >Show Credendial</a
+                  >
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cyber Security</h3>
+                  <a
+                    href="https://www.credly.com/badges/234657c6-49e5-4123-8474-15812bcc9d99?source=linked_in_profile"
+                    >Show Credential</a
+                  >
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <a
+                    href="http://files.codingninjas.in/certificate18394619238f212f3241ebc51b5d37ca9f885c2.pdf"
+                    >Show Credential</a
+                  >
+                </div>
+              </article>
             </div>
+          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </div>
 
     <div id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container no-hover">
-                    <div class="article-container">
-                        <h2 class="experience-sub-title project-title"><u>Web Projects</u></h2>
-                        <div class="project-container"> <!-- Wrap in a project-container -->
-                            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
-                            <div class="btn-container">
-                                <button class="btn btn-color-2 project-btn" onclick="location.href='webProjects.html'">
-                                    Go to my Web Projects
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container no-hover">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">
+                <u>Web Projects</u>
+              </h2>
+              <div class="project-container">
+                <!-- Wrap in a project-container -->
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='webProjects.html'"
+                  >
+                    Go to my Web Projects
+                  </button>
                 </div>
-                <div class="details-container color-container no-hover">
-                    <div class="article-container">
-                        <h2 class="experience-sub-title project-title"><u>Android Projects</u></h2>
-                        <div class="project-container"> <!-- Wrap in a project-container -->
-                            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-                            <div class="btn-container">
-                                <button class="btn btn-color-2 project-btn"
-                                    onclick="location.href='androidProjects.html'">
-                                    Go to my Android Projects
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="details-container color-container no-hover">
+            <div class="article-container">
+              <h2 class="experience-sub-title project-title">
+                <u>Android Projects</u>
+              </h2>
+              <div class="project-container">
+                <!-- Wrap in a project-container -->
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='androidProjects.html'"
+                  >
+                    Go to my Android Projects
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </div>
 
     <div id="contact" class="contact">
-        <h1 class="title">Contact Me</h1>
-        <div class="contactContainer">
-            <div class="contactRow">
-                <div class="contact-left">
-                    <!-- Contact left content -->
-                    <h1 class="section__text__p2"><u>Contact Details</u></h1>
-                    <div class="contact-info-container">
-                        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-                        <p><a href="mailto: tusharmahajan080@gmail.com">tusharmahajan080@gmail.com</a></p>
-                    </div>
-                    <div class="contact-info-container">
-                        <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon email-icon" />
-                        <p><a href="tel:+91 7006499240">Phone Number -: +91 7006499240</a>
-                        </p>
-                    </div>
-                    <div class="contact-info-container">
-                        <img src="./assets/linkImage.png" alt="Link icon" class="icon contact-icon email-icon" />
-                        <p><a href="https://auth.geeksforgeeks.org/user/tusharmahajan080/practice">Geeks For Geeks(GFG)
-                                - Tushar Mahajan </a>
-                        </p>
-                    </div>
-                    <div id="socials-container">
-                        <img src="assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
-                            onclick="location.href='https://www.linkedin.com/in/tushar-mahajan-110451225/'">
-                        <img src="assets/github.png" alt="My GitHub Profile" class="icon"
-                            onclick="location.href='https://github.com/Tushar20-20Mahajan'">
-                        <img src="assets/Instagram.png" alt="My Instagram Profile" class="icon"
-                            onclick="location.href='https://www.instagram.com/_tushar_mahajan_/'">
-                        <img src="assets/You-Tube.png" alt="My Instagram Profile" class="icon4"
-                            onclick="location.href='https://www.youtube.com/channel/UCCKlzjC09UeUeCABtaszHbg'">
-                    </div>
-                    <div id="download-cv">
-                        <a class="btn btn-color-1" href="./assets/TusharMahajan(Resume).pdf" download>Download
-                            Resume</a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <!-- Contact right content -->
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="text" name="Phone-Number" placeholder="Your Phone Number" required
-                            pattern="[0-9]{10}" title="Please enter a 10-digit phone number (numbers only)">
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
-                        <div class="submitButton">
-                            <button type="submit" class="btn btn-color-1">Submit</button>
-                        </div>
-                    </form>
-                    <span id="msg"></span>
-
-                </div>
+      <h1 class="title">Contact Me</h1>
+      <div class="contactContainer">
+        <div class="contactRow">
+          <div class="contact-left">
+            <!-- Contact left content -->
+            <h1 class="section__text__p2"><u>Contact Details</u></h1>
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p>
+                <a href="mailto: tusharmahajan080@gmail.com"
+                  >tusharmahajan080@gmail.com</a
+                >
+              </p>
             </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/phone.png"
+                alt="Phone icon"
+                class="icon contact-icon email-icon"
+              />
+              <p>
+                <a href="tel:+91 7006499240">Phone Number -: +91 7006499240</a>
+              </p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkImage.png"
+                alt="Link icon"
+                class="icon contact-icon email-icon"
+              />
+              <p>
+                <a
+                  href="https://auth.geeksforgeeks.org/user/tusharmahajan080/practice"
+                  >Geeks For Geeks(GFG) - Tushar Mahajan
+                </a>
+              </p>
+            </div>
+            <div id="socials-container">
+              <img
+                src="assets/linkedin.png"
+                alt="My LinkedIn Profile"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/tushar-mahajan-110451225/'"
+              />
+              <img
+                src="assets/github.png"
+                alt="My GitHub Profile"
+                class="icon"
+                onclick="location.href='https://github.com/Tushar20-20Mahajan'"
+              />
+              <img
+                src="assets/Instagram.png"
+                alt="My Instagram Profile"
+                class="icon"
+                onclick="location.href='https://www.instagram.com/_tushar_mahajan_/'"
+              />
+              <img
+                src="assets/You-Tube.png"
+                alt="My Instagram Profile"
+                class="icon4"
+                onclick="location.href='https://www.youtube.com/channel/UCCKlzjC09UeUeCABtaszHbg'"
+              />
+            </div>
+            <div id="download-cv">
+              <a
+                class="btn btn-color-1"
+                href="./assets/TusharMahajan(Resume).pdf"
+                download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="contact-right">
+            <!-- Contact right content -->
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Phone-Number"
+                placeholder="Your Phone Number"
+                required
+                pattern="[0-9]{10}"
+                title="Please enter a 10-digit phone number (numbers only)"
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <div class="submitButton">
+                <button type="submit" class="btn btn-color-1">Submit</button>
+              </div>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
     </div>
 
-
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2023 Tushar Mahajan All Rights Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Tushar Mahajan All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
